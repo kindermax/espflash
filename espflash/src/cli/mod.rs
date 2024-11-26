@@ -218,6 +218,8 @@ pub fn connect(args: &ConnectArgs, config: &Config) -> Result<Flasher> {
                 serial_number: None,
                 manufacturer: None,
                 product: None,
+                bus_id: "".to_string(),
+                port_chain: vec![],
             }
         }
         _ => unreachable!(),
